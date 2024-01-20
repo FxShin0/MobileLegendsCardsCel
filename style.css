@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Oswald&display=swap");
+* {
+  box-sizing: border-box;
+}
+/* Settings generales */
+.gral {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.heroe1 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+}
+.heroe2 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+}
+.foto {
+  height: 50%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.fotos {
+  width: 100%;
+  height: 100%;
+}
+.desc {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  border-top-style: solid;
+  border-top-color: white;
+  overflow: auto;
+}
+.link {
+  align-self: flex-end;
+  padding: 2% 2% 2% 2%;
+  border-style: solid;
+  border-radius: 1rem;
+  text-decoration: none;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.parra {
+  font-family: "Fira Sans";
+  font-size: 80%;
+  margin-bottom: 2px;
+}
+.link:visited {
+  text-decoration: none;
+}
+.link:hover {
+  background: white;
+  color: black;
+}
+.nombre {
+  font-family: "Oswald";
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* Settings de gusion */
+.foto-gusion {
+  background-image: url(./img/fondo\ gusion.avif);
+}
+.desc-gusion {
+  background: rgb(124, 0, 122);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(124, 0, 122, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(124, 0, 122, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(124, 0, 122, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7c007a",endColorstr="#000000",GradientType=1);
+}
+.nombre-gusion {
+  color: rgba(177, 32, 190, 0.88);
+}
+.gusionpic {
+  transition: all 0.3s ease;
+}
+.gusionpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(239, 179, 255, 0.88));
+}
+.gusion {
+  transition: all 0.3s ease;
+}
+.gusion:hover {
+  filter: drop-shadow(8px 8px 10px rgba(65, 19, 101, 0.94)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de tigreal */
+.nombre-tigreal {
+  color: rgba(171, 153, 24, 0.88);
+}
+.foto-tigreal {
+  background-image: url(./img/fondo\ tigreal.avif);
+}
+.desc-tigreal {
+  background: rgb(42, 34, 0);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(42, 34, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(42, 34, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 34, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2200",endColorstr="#000000",GradientType=1);
+}
+.tigrealpic {
+  transition: all 0.3s ease;
+}
+.tigrealpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 181, 0.88));
+}
+.tigreal {
+  transition: all 0.3s ease;
+}
+.tigreal:hover {
+  filter: drop-shadow(8px 8px 10px rgba(174, 145, 0, 0.8)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de Kagura */
+.nombre-kagura {
+  color: purple;
+}
+.foto-kagura {
+  background-image: url(./img/fondo\ kagura.avif);
+}
+.desc-kagura {
+  background: rgb(86, 0, 124);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(86, 0, 124, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(86, 0, 124, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(86, 0, 124, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56007c",endColorstr="#000000",GradientType=1);
+}
+.kagurapic {
+  transition: all 0.3s ease;
+}
+.kagurapic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(222, 176, 255, 0.88));
+}
+.kagura {
+  transition: all 0.3s ease;
+}
+.kagura:hover {
+  filter: drop-shadow(8px 8px 10px rgba(87, 0, 174, 0.82)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de Yin */
+.foto-yin {
+  background-image: url(./img/fondo\ yin.avif);
+}
+.desc-yin {
+  background: rgb(0, 10, 103);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 10, 103, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 10, 103, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 10, 103, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a67",endColorstr="#000000",GradientType=1);
+}
+.nombre-yin {
+  color: rgb(31, 53, 255);
+}
+.yinpic {
+  transition: all 0.3s ease;
+}
+.yinpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(170, 170, 255, 0.88));
+}
+.yin {
+  transition: all 0.3s ease;
+}
+.yin:hover {
+  filter: drop-shadow(8px 8px 10px rgba(4, 26, 218, 0.95)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de Natan */
+.foto-natan {
+  background-image: url(./img/fondo\ natan.png);
+}
+.desc-natan {
+  background: rgb(0, 49, 70);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 49, 70, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 49, 70, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 49, 70, 1) 0%,
+    rgba(7, 0, 13, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003146",endColorstr="#000000",GradientType=1);
+}
+.nombre-natan {
+  color: rgb(93, 108, 250);
+}
+.natanpic {
+  transition: all 0.3s ease;
+}
+.natanpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(170, 213, 255, 0.88));
+}
+.natan {
+  transition: all 0.3s ease;
+}
+.natan:hover {
+  filter: drop-shadow(4px 8px 10px rgba(0, 133, 228, 0.95)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de Hayabusa */
+.foto-hayabusa {
+  background-image: url(./img/fondo\ hayabusa.png);
+}
+.desc-hayabusa {
+  background: rgb(31, 0, 0);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(31, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(31, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f0000",endColorstr="#000000",GradientType=1);
+}
+.nombre-hayabusa {
+  color: rgba(206, 0, 0, 0.8);
+}
+.hayabusapic {
+  transition: all 0.3s ease;
+}
+.hayabusapic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 38, 38, 0.88));
+}
+.hayabusa {
+  transition: all 0.3s ease;
+}
+.hayabusa:hover {
+  filter: drop-shadow(8px 8px 10px rgba(118, 0, 0, 0.8)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings Khufra */
+.foto-khufra {
+  background-image: url(./img/fondo\ khufra.avif);
+}
+.desc-khufra {
+  background: rgb(62, 27, 0);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(62, 27, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(62, 27, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 27, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e1b00",endColorstr="#000000",GradientType=1);
+}
+.nombre-khufra {
+  color: rgba(190, 83, 0, 0.88);
+}
+.khufrapic {
+  transition: all 0.3s ease;
+}
+.khufrapic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(198, 66, 0, 0.88));
+}
+.khufra {
+  transition: all 0.3s ease;
+}
+.khufra:hover {
+  filter: drop-shadow(8px 8px 10px rgba(125, 65, 19, 0.88)) brightness(1.6);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings Lunox */
+.foto-lunox {
+  background-image: url(./img/fondo\ lunox.jpg);
+}
+.desc-lunox {
+  background: rgb(21, 0, 52);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(21, 0, 52, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(21, 0, 52, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 0, 52, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#150034",endColorstr="#000000",GradientType=1);
+}
+.nombre-lunox {
+  color: rgba(120, 40, 156, 0.88);
+}
+.lunoxpic {
+  transition: all 0.3s ease;
+}
+.lunoxpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.88));
+}
+.lunox {
+  transition: all 0.3s ease;
+}
+.lunox:hover {
+  filter: drop-shadow(8px 8px 10px rgba(141, 1, 204, 0.88)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de Chou */
+.foto-chou {
+  background-image: url(./img/fondo\ chou.avif);
+}
+.desc-chou {
+  background: rgb(0, 10, 42);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(0, 10, 42, 1) 0%,
+    rgba(9, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(0, 10, 42, 1) 0%,
+    rgba(9, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 10, 42, 1) 0%,
+    rgba(9, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a2a",endColorstr="#000000",GradientType=1);
+}
+.nombre-chou {
+  color: rgba(12, 20, 186, 0.88);
+}
+.choupic {
+  transition: all 0.3s ease;
+}
+.choupic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(240, 52, 52, 0.88));
+}
+.chou {
+  transition: all 0.3s ease;
+}
+.chou:hover {
+  filter: drop-shadow(8px 8px 10px rgba(12, 20, 186, 0.88)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
+/* Settings de beatrix */
+.foto-beatrix {
+  background-image: url(./img/fondo\ beatrix.jpg);
+}
+.desc-beatrix {
+  background: rgb(59, 39, 0);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(59, 39, 0, 1) 0%,
+    rgba(9, 6, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(59, 39, 0, 1) 0%,
+    rgba(9, 6, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 39, 0, 1) 0%,
+    rgba(9, 6, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b2700",endColorstr="#000000",GradientType=1);
+}
+.nombre-beatrix {
+  color: rgba(185, 159, 26, 0.88);
+}
+.beatrixpic {
+  transition: all 0.3s ease;
+}
+.beatrixpic:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 241, 173, 0.88));
+}
+.beatrix {
+  transition: all 0.3s ease;
+}
+.beatrix:hover {
+  filter: drop-shadow(4px 5px 10px rgba(194, 165, 18, 0.88)) brightness(1.3);
+  box-shadow: 2px 2px 25px 0px white;
+}
